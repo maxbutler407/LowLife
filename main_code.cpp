@@ -76,7 +76,7 @@ int main()
         Stagger(character2, delay);
     }
 
-    std::string character2 = "\nSo you are a " + character + ".";
+    std::string character2 = "\nSo you are a " + character + "...";
     Stagger(character2, delay);
 
 
