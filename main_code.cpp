@@ -199,7 +199,7 @@ int main()
 
     // Section calls the GameChronology Functions
     //Prologue(delay1, delay2, bold);
-    Introduction(delay1, name);
+    //Introduction(delay1, name);
 
     return 0;
 }
