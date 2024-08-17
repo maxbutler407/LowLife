@@ -60,6 +60,9 @@ public:
 
     // ----------Player Inventory----------
     int spaceSuitCount;
+    int merasGlowthCount;
+    int ectoplasmCount;
+    int headCount;
     int testItemCount;
 
     // Each item is a string which can have its own quantity (using int vector).
@@ -67,7 +70,10 @@ public:
     void InitialiseInventory();
     void HideEmptySlots();
     void ShowInventory() const;
-    void UpdateInventory();
+    void AddSpaceSuitToInventory();
+    void AddMerasGlowthToInventory();
+    void AddEctoplasmToInventory();
+    void AddBalisHeadToInventory();
 };
 
 #endif // PLAYER_H
