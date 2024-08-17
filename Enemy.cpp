@@ -13,7 +13,7 @@ void Enemy::GenerateEnemy(const std::string& playerName) {
     if (randNum == 1) {
         enemyName = "\033[31mPossessed Astronaut\033[0m";
         attackName = " used its raygun on " + playerName;
-        buffName = " activated its stim injection";
+        buffName = " activated its stim injection.";
         health = 80;
         damage = 15;
         buff = 10;
@@ -22,12 +22,32 @@ void Enemy::GenerateEnemy(const std::string& playerName) {
     else if (randNum == 2) {
         enemyName = "\033[31mCentimane\033[0m";
         attackName = " used a number of his arms to bombard " + playerName;
-        buffName = "brought out more arms to attack the LowLife";
+        buffName = "brought out more arms to attack the LowLife.";
         health = 100;
         damage = 30;
         buff = 5;
         darkness = 10;
     }
+}
+
+void Enemy::GeneratePigman(const std::string& playerName) {
+    enemyName = "\033[31mRotten Pigman\033[0m";
+    attackName = " swung its greatsword at " + playerName;
+    buffName = " ate a clump of a past victim's flesh.";
+    health = 0;
+    damage = 20;
+    buff = 15;
+    darkness = 25;
+}
+
+void Enemy::GenerateBali(const std::string& playerName) {
+    enemyName = "\033[31mLord Bali\033[0m";
+    attackName = "'s eyes glowed intensely, causing flashes of red lightning to strike " + playerName;
+    buffName = " consumed the brain of one of his worshippers.";
+    health = 110;
+    damage = 15;
+    buff = 15;
+    darkness = 30;
 }
 
 // Methods are used to modify INITIALISED member variables for better encapsulation.

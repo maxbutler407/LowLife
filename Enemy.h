@@ -24,6 +24,8 @@ public:
     Enemy(std::string eN, std::string aN, std::string bN, std::string pN, std::string iD, int h, int dam, int b, int dar);
 
     void GenerateEnemy(const std::string& playerName);
+    void GeneratePigman(const std::string& playerName);
+    void GenerateBali(const std::string& playerName);
     void IncreaseHealth(int amount);
     void DecreaseHealth(int amount);
     void IncreaseDamage(int amount);

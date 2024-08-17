@@ -1,10 +1,10 @@
 #include "Player.h"
 
-Player::Player() : playerName(""), health(0), strength(0), magic(0), intelligence(0), wealth(0), darkness(0), spaceSuitCount(0), testItemCount(12) {}
+Player::Player() : playerName(""), health(0), strength(0), magic(0), intelligence(0), wealth(0), darkness(0), spaceSuitCount(0), merasGlowthCount(0), testItemCount(12) {}
 
 // This constructor initialises the private member variables (using an 'initiliser list').
 Player::Player(std::string n, int h, int s, int m, int i, int w, int d)
-    : playerName(n), health(h), strength(s), magic(m), intelligence(i), wealth(w), darkness(d), spaceSuitCount(0), testItemCount(12) {}
+    : playerName(n), health(h), strength(s), magic(m), intelligence(i), wealth(w), darkness(d), spaceSuitCount(0), merasGlowthCount(0), testItemCount(12) {}
 
 // Methods are used to modify INITIALISED member variables for better encapsulation.
 void Player::IncreaseHealth(int amount) {
@@ -68,6 +68,9 @@ void Player::DisplayPlayerStats() const {
 // ----------Player Inventory----------
 void Player::InitialiseInventory() {
     inventory["Inter-realm Spacesuit"] = spaceSuitCount;
+    inventory["Mera's Glowth"] = merasGlowthCount;
+    inventory["Ancient Ghost's Ectoplasm"] = ectoplasmCount;
+    inventory["Lord Bali's Head"] = headCount;
     inventory["test item"] = testItemCount;
 }
 
@@ -86,9 +89,26 @@ void Player::HideEmptySlots() {
 void Player::ShowInventory() const {
     std::cout << "\nCurrent Inventory:";
     for (const auto& item : inventory) {
-        std::cout << "\n" << item.first << " quantity: " << item.second << std::endl;
+        std::cout << "\n" << item.first << " quantity: " << item.second;
     }
 }
 
-void Player::UpdateInventory() {
+void Player::AddSpaceSuitToInventory() {
+    spaceSuitCount = 1;
+    std::cout << "Added Inter-realm Spacesuit to your inventory!";
+}
+
+void Player::AddMerasGlowthToInventory() {
+    merasGlowthCount = 1;
+    std::cout << "Added Mera's Glowth to your inventory!";
+}
+
+void Player::AddEctoplasmToInventory() {
+    ectoplasmCount = 1;
+    std::cout << "Added Ancient Ghost's Ectoplasm to your inventory!";
+}
+
+void Player::AddBalisHeadToInventory() {
+    headCount = 1;
+    std::cout << "Added Lord Bali's Head to your inventory!";
 }
