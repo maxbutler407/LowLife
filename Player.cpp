@@ -1,10 +1,10 @@
 #include "Player.h"
 
-Player::Player() : playerName(""), health(0), strength(0), magic(0), intelligence(0), wealth(0), darkness(0), spaceSuitCount(0), testItemCount(12) {}
+Player::Player() : playerName(""), health(0), strength(0), magic(0), intelligence(0), darkness(0), spaceSuitCount(0), merasGlowthCount(0), coinCount(0), ectoplasmCount(0), headCount(0) {}
 
 // This constructor initialises the private member variables (using an 'initiliser list').
-Player::Player(std::string n, int h, int s, int m, int i, int w, int d)
-    : playerName(n), health(h), strength(s), magic(m), intelligence(i), wealth(w), darkness(d), spaceSuitCount(0), testItemCount(12) {}
+Player::Player(std::string n, int h, int s, int m, int i, int d)
+    : playerName(n), health(h), strength(s), magic(m), intelligence(i), darkness(d), spaceSuitCount(0), merasGlowthCount(0), coinCount(0), ectoplasmCount(0), headCount(0) {}
 
 // Methods are used to modify INITIALISED member variables for better encapsulation.
 void Player::IncreaseHealth(int amount) {
@@ -39,14 +39,6 @@ void Player::DecreaseIntelligence(int amount) {
     intelligence -= amount;
 }
 
-void Player::IncreaseWealth(int amount) {
-    wealth += amount;
-}
-
-void Player::DecreaseWealth(int amount) {
-    wealth -= amount;
-}
-
 void Player::IncreaseDarkness(int amount) {
     darkness += amount;
 }
@@ -61,14 +53,16 @@ void Player::DisplayPlayerStats() const {
     std::cout << "\n   - Strength       |  " << strength;
     std::cout << "\n   - Magic          |  " << magic;
     std::cout << "\n   - Intelligence   |  " << intelligence;
-    std::cout << "\n   - Wealth         |  " << wealth;
-    std::cout << "\n   - Darkness       |  " << darkness;
+    std::cout << "\n   - \033[31mDarkness\033[0m       |  " << darkness << "\n\n";
 }
 
 // ----------Player Inventory----------
 void Player::InitialiseInventory() {
-    inventory["Inter-realm Spacesuit"] = spaceSuitCount;
-    inventory["test item"] = testItemCount;
+    inventory["\033[33mInter-realm Spacesuit\033[0m"] = spaceSuitCount;
+    inventory["\033[33mMera's Glowth\033[0m"] = merasGlowthCount;
+    inventory["\033[33mKaltornan Coin\033[0m"] = coinCount;
+    inventory["\033[33mAncient Ghost's Ectoplasm\033[0m"] = ectoplasmCount;
+    inventory["\033[33mLord Bali's Head\033[0m"] = headCount;
 }
 
 // Doesn't show items in inventory when quantity = 0;
@@ -86,9 +80,31 @@ void Player::HideEmptySlots() {
 void Player::ShowInventory() const {
     std::cout << "\nCurrent Inventory:";
     for (const auto& item : inventory) {
-        std::cout << "\n" << item.first << " quantity: " << item.second << std::endl;
+        std::cout << "\n" << item.first << " quantity: " << item.second;
     }
 }
 
-void Player::UpdateInventory() {
+void Player::AddSpaceSuitToInventory() {
+    spaceSuitCount = 1;
+    std::cout << "\n\nAdded \033[33mInter-realm Spacesuit\033[0m to inventory!";
+}
+
+void Player::AddMerasGlowthToInventory() {
+    merasGlowthCount = 1;
+    std::cout << "\n\nAdded \033[33mMera's Glowth\033[0m to inventory!";
+}
+
+void Player::AddCoinToInventory() {
+    coinCount = 1;
+    std::cout << "\n\nAdded \033[33mKaltornan Coin\033[0m to inventory!";
+}
+
+void Player::AddEctoplasmToInventory() {
+    ectoplasmCount = 1;
+    std::cout << "\n\nAdded \033[33mAncient Ghost's Ectoplasm\033[0m to inventory!";
+}
+
+void Player::AddBalisHeadToInventory() {
+    headCount = 1;
+    std::cout << "\n\nAdded \033[33mLord Bali's Head\033[0m to inventory!";
 }
