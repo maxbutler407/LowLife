@@ -351,7 +351,7 @@ void StartBattle(int delay1, Player& player, Enemy& enemy, const std::string& pl
                     enemy.EnemyAttack(delay1, player);
                     std::string handoAttack1 = "\n\nHando brought out his plasma rifle and fired it at the " + enemy.enemyName + " - some of its feathers caught fire!..\n\n...\033[31m-";
                     Stagger(handoAttack1, delay1);
-                    StaggerInt(player.magic * 1.2, delay1);
+                    StaggerInt(player.magic * 0.5, delay1);
                     std::string handoAttack2 = " enemy health\033[0m!";
                     Stagger(handoAttack2, delay1);
                     enemy.DecreaseHealth(player.magic * 0.5);
@@ -360,7 +360,7 @@ void StartBattle(int delay1, Player& player, Enemy& enemy, const std::string& pl
                     enemy.EnemyBuff(delay1, player, enemy);
                     std::string handoAttack1 = "\n\nThe creature Hando rode roared, biting and scratching the flesh off the " + enemy.enemyName + "...\n\n...\033[31m-";
                     Stagger(handoAttack1, delay1);
-                    StaggerInt(player.magic * 1.2, delay1);
+                    StaggerInt(player.strength * 0.5, delay1);
                     std::string handoAttack2 = " enemy health\033[0m!";
                     Stagger(handoAttack2, delay1);
                     enemy.DecreaseHealth(player.strength * 0.5);
@@ -369,7 +369,7 @@ void StartBattle(int delay1, Player& player, Enemy& enemy, const std::string& pl
                     enemy.EnemyHealthRegen(delay1, player, enemy);
                     std::string handoAttack1 = "\n\nA lasso was thrown round the " + enemy.enemyName + "'s neck - it struggled to move...\n\n...\033[31m-";
                     Stagger(handoAttack1, delay1);
-                    StaggerInt(player.magic * 1.2, delay1);
+                    StaggerInt(player.intelligence * 0.5, delay1);
                     std::string handoAttack2 = " enemy damage\033[0m!";
                     Stagger(handoAttack2, delay1);
                     enemy.DecreaseDamage(player.intelligence * 0.5);
@@ -429,7 +429,7 @@ void StartBattle(int delay1, Player& player, Enemy& enemy, const std::string& pl
                         enemy.EnemyAttack(delay1, player);
                         std::string handoAttack1 = "\n\nHando brought out his plasma rifle and fired it at the " + enemy.enemyName + " - some of its feathers caught fire!..\n\n...\033[31m-";
                         Stagger(handoAttack1, delay1);
-                        StaggerInt(player.magic * 1.2, delay1);
+                        StaggerInt(player.magic * 0.5, delay1);
                         std::string handoAttack2 = " enemy health\033[0m!";
                         Stagger(handoAttack2, delay1);
                         enemy.DecreaseHealth(player.magic * 0.5);
@@ -438,7 +438,7 @@ void StartBattle(int delay1, Player& player, Enemy& enemy, const std::string& pl
                         enemy.EnemyBuff(delay1, player, enemy);
                         std::string handoAttack1 = "\n\nThe creature Hando rode roared, biting and scratching the flesh off the " + enemy.enemyName + "...\n\n...\033[31m-";
                         Stagger(handoAttack1, delay1);
-                        StaggerInt(player.magic * 1.2, delay1);
+                        StaggerInt(player.strength * 0.5, delay1);
                         std::string handoAttack2 = " enemy health\033[0m!";
                         Stagger(handoAttack2, delay1);
                         enemy.DecreaseHealth(player.strength * 0.5);
@@ -447,7 +447,7 @@ void StartBattle(int delay1, Player& player, Enemy& enemy, const std::string& pl
                         enemy.EnemyHealthRegen(delay1, player, enemy);
                         std::string handoAttack1 = "\n\nA lasso was thrown round the " + enemy.enemyName + "'s neck - it struggled to move...\n\n...\033[31m-";
                         Stagger(handoAttack1, delay1);
-                        StaggerInt(player.magic * 1.2, delay1);
+                        StaggerInt(player.intelligence * 0.5, delay1);
                         std::string handoAttack2 = " enemy damage\033[0m!";
                         Stagger(handoAttack2, delay1);
                         enemy.DecreaseDamage(player.intelligence * 0.5);
@@ -512,7 +512,7 @@ void StartBattle(int delay1, Player& player, Enemy& enemy, const std::string& pl
                         enemy.EnemyAttack(delay1, player);
                         std::string handoAttack1 = "\n\nHando brought out his plasma rifle and fired it at the " + enemy.enemyName + " - some of its feathers caught fire!..\n\n...\033[31m-";
                         Stagger(handoAttack1, delay1);
-                        StaggerInt(player.magic * 1.2, delay1);
+                        StaggerInt(player.magic * 0.5, delay1);
                         std::string handoAttack2 = " enemy health\033[0m!";
                         Stagger(handoAttack2, delay1);
                         enemy.DecreaseHealth(player.magic * 0.5);
@@ -521,7 +521,7 @@ void StartBattle(int delay1, Player& player, Enemy& enemy, const std::string& pl
                         enemy.EnemyBuff(delay1, player, enemy);
                         std::string handoAttack1 = "\n\nThe creature Hando rode roared, biting and scratching the flesh off the " + enemy.enemyName + "...\n\n...\033[31m-";
                         Stagger(handoAttack1, delay1);
-                        StaggerInt(player.magic * 1.2, delay1);
+                        StaggerInt(player.strength * 0.5, delay1);
                         std::string handoAttack2 = " enemy health\033[0m!";
                         Stagger(handoAttack2, delay1);
                         enemy.DecreaseHealth(player.strength * 0.5);
@@ -530,7 +530,7 @@ void StartBattle(int delay1, Player& player, Enemy& enemy, const std::string& pl
                         enemy.EnemyHealthRegen(delay1, player, enemy);
                         std::string handoAttack1 = "\n\nA lasso was thrown round the " + enemy.enemyName + "'s neck - it struggled to move...\n\n...\033[31m-";
                         Stagger(handoAttack1, delay1);
-                        StaggerInt(player.magic * 1.2, delay1);
+                        StaggerInt(player.intelligence * 0.5, delay1);
                         std::string handoAttack2 = " enemy damage\033[0m!";
                         Stagger(handoAttack2, delay1);
                         enemy.DecreaseDamage(player.intelligence * 0.5);
@@ -595,7 +595,7 @@ void StartBattle(int delay1, Player& player, Enemy& enemy, const std::string& pl
                     enemy.EnemyAttack(delay1, player);
                     std::string handoAttack1 = "\n\nHando brought out his plasma rifle and fired it at the " + enemy.enemyName + " - some of its feathers caught fire!..\n\n...\033[31m-";
                     Stagger(handoAttack1, delay1);
-                    StaggerInt(player.magic * 1.2, delay1);
+                    StaggerInt(player.magic * 0.5, delay1);
                     std::string handoAttack2 = " enemy health\033[0m!";
                     Stagger(handoAttack2, delay1);
                     enemy.DecreaseHealth(player.magic * 0.5);
@@ -604,7 +604,7 @@ void StartBattle(int delay1, Player& player, Enemy& enemy, const std::string& pl
                     enemy.EnemyBuff(delay1, player, enemy);
                     std::string handoAttack1 = "\n\nThe creature Hando rode roared, biting and scratching the flesh off the " + enemy.enemyName + "...\n\n...\033[31m-";
                     Stagger(handoAttack1, delay1);
-                    StaggerInt(player.magic * 1.2, delay1);
+                    StaggerInt(player.strength * 0.5, delay1);
                     std::string handoAttack2 = " enemy health\033[0m!";
                     Stagger(handoAttack2, delay1);
                     enemy.DecreaseHealth(player.strength * 0.5);
@@ -613,7 +613,7 @@ void StartBattle(int delay1, Player& player, Enemy& enemy, const std::string& pl
                     enemy.EnemyHealthRegen(delay1, player, enemy);
                     std::string handoAttack1 = "\n\nA lasso was thrown round the " + enemy.enemyName + "'s neck - it struggled to move...\n\n...\033[31m-";
                     Stagger(handoAttack1, delay1);
-                    StaggerInt(player.magic * 1.2, delay1);
+                    StaggerInt(player.intelligence * 0.5, delay1);
                     std::string handoAttack2 = " enemy damage\033[0m!";
                     Stagger(handoAttack2, delay1);
                     enemy.DecreaseDamage(player.intelligence * 0.5);
@@ -640,8 +640,8 @@ void StartBattle(int delay1, Player& player, Enemy& enemy, const std::string& pl
         }
         else if (character == "astronomer" || character == "Astronomer") {
             player.strength = 10;
-            player.intelligence = 40;
-            player.magic = 10;
+            player.intelligence = 5;
+            player.magic = 30;
         }
         player.DisplayPlayerStats();
         stopMusic();
@@ -1090,6 +1090,7 @@ public:
 
                 // Instantiates the end of the game.
                 if (player.headCount > 0 && player.darkness >= 60) {
+                    stopMusic();
                     startMusic("C:\\Programming\\C++ Games\\LowLife\\LowLifeMusic\\Finale.wav");
                     std::string tonobros12 = "\n" + playerName + ", left exhausted, bitter and disgusted by their experience in these worlds, grew into a fit of rage...";
                     Stagger(tonobros12, delay1);
@@ -1112,6 +1113,7 @@ public:
                     Credits(delay2);
                 }
                 else {
+                    stopMusic();
                     startMusic("C:\\Programming\\C++ Games\\LowLife\\LowLifeMusic\\Finale.wav");
                     std::string tonobros19 = "\nWith a sudden hesitation from \033[31mTonobros\033[0m, " + playerName + " was able to gain the upper hand and strike a final blow against the heart of the beings power...his blue heart!";
                     Stagger(tonobros19, delay1);
