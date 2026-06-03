@@ -1,7 +1,7 @@
 # LowLife
 LowLife is a C++ passion project of mine, made during the Summer of 2024. It is a text-based, open-world RPG based in a world where sci-fi and fantasy are fused together in a gritty but fantastical world of my creation [WARNING: some images and text might be too explicit]. A lot of effort was focused towards making the world feel interesting and expansive by relying on the images and player imagination, due to the limitations of the text-based design. C++ was used because of its speed and use in Unreal Engine (which I have now begun learning).
 
-In addition, some of the original art and audio has been changed/removed to avoid copyright issues, I would prefer to use non-AI images but that means dealing with copyright risks.
+In addition, some of the original art has been changed and some audio removed to avoid copyright issues, I would prefer to use non-AI images but that means dealing with copyright risks.
 
 # Gameplay
 
