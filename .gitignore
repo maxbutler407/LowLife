@@ -1,0 +1,13 @@
+out/
+build/
+x64/
+.vs/
+*.exe
+*.obj
+*.pdb
+*.user
+*.dll
+*.avi
+LowLifeMusic/
+LowLifePhotos/
+miniaudio.h

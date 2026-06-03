@@ -1,0 +1,18 @@
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- LowLife is a dark fantasy and sci-fi text-based RPG.
+
+- The game is set in a realm of both fantasy and sci-fi, as a result of a portal being opened sometime in the Third Dynasty of Moranthia.
+
+- The aim of the game is for the player to defeat Tonobros - the manifestation of the Darkness that has polluted the realm since the portal was opened.
+
+- From the start, the player can choose to be either a wizard, astronomer or beast - generating unique moves when in battle.
+
+- The player can navigate through the world (dependant on the items they have in their inventory) BY TYPING THE DIRECTION they'd like to travel in.
+
+- Random battles will occur as the player makes their way through the realm. There are 4 bosses to overcome.
+
+- There are 2 endings in the game - which are dependant on THE PLAYER'S DARKNESS AND their choice when confronting Lord Bali.
+
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------
+
