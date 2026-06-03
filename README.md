@@ -7,6 +7,8 @@ In addition, some of the original art and audio has been changed/removed to avoi
 
 The game begins by giving a brief introduction into how the game works and details the lore of Moranthia. Players are able to choose between 3 classes: Wizard, Beast and Astronomer, each with their own unique stats, attacks and buffs. Each class has a darkness-based move during battle which, if used and thus, raised too much, will cause the player to succumb to the darkness and perish. This stat never resets, unlike the others (e.g. health), throughout the game. The rate at which it increases is based on the enemy's darkness stat.
 
+The game is designed to be difficult! Players may have to play it several times to achieve both endings!
+
 The following images are screenshots taken from the final version of the game.
 
 <img width="1614" height="346" alt="image" src="https://github.com/user-attachments/assets/b42f8cd5-9abe-4a26-967b-0b51504f5441" />
