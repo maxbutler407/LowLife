@@ -6,6 +6,8 @@ Some of the original art and audio has been changed/removed to avoid copyright i
 The following images are screenshots taken from the final version of the game.
 
 <img width="940" height="202" alt="image" src="https://github.com/user-attachments/assets/b7a219d4-c577-4b82-829c-1bf7b0ba51e8" />
+<img width="1206" height="259" alt="image" src="https://github.com/user-attachments/assets/5d9cc539-b721-4137-b553-c1e65afc63b1" />
+
 <img width="934" height="341" alt="image" src="https://github.com/user-attachments/assets/45fd624d-71eb-48fd-90e4-813f00137d59" />
 
 
